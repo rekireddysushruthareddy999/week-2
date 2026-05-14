@@ -1,0 +1,154 @@
+// 1. Basic & Advanced Operations on Arrays & Objects
+// Arrays
+// An array stores multiple values in a single variable.
+
+// let numbers = [10, 20, 30];
+// Basic Array Operations
+// numbers.push(40);      // Add at end
+// numbers.pop();         // Remove last element
+// numbers.unshift(5);    // Add at beginning
+// numbers.shift();       // Remove first element
+
+// console.log(numbers.length); // Array length
+
+// 2.Advanced Array Operations
+// let arr = [1, 2, 3, 4, 5];
+// let doubled = arr.map(num => num * 2);
+// let even = arr.filter(num => num % 2 === 0);
+// let sum = arr.reduce((acc, curr) => acc + curr, 0);
+
+// console.log(doubled);
+// console.log(even);
+// console.log(sum);
+
+// 3.Objects store data in key-value pairs.
+// let student = {
+//   name: "Rahul",
+//   age: 21,
+//   course: "MERN"
+// };
+// Object Operations
+// console.log(student.name);
+// student.city = "Hyderabad"; // Add property
+// student.age = 22; // Update property
+// delete student.course; // Delete property
+// console.log(student);
+
+// 4.Advanced Object Operations
+// let keys = Object.keys(student);
+// let values = Object.values(student);
+// let entries = Object.entries(student);
+// console.log(keys);
+// console.log(values);
+// console.log(entries);
+
+// //Arrays help us store multiple values in an ordered way, while objects help store related data using key-value pairs. Advanced methods like map(), filter(), and reduce() make data processing easier and faster in JavaScript.
+
+// 5. Processing Array of Objects
+
+// An array of objects is commonly used to store structured data.
+
+// let students = [
+//   { name: "Amit", marks: 80 },
+//   { name: "Riya", marks: 90 },
+//   { name: "John", marks: 70 }
+// ];
+// Using map()
+// let names = students.map(student => student.name);
+
+// console.log(names);
+// Using filter()
+// let topper = students.filter(student => student.marks > 75);
+
+// console.log(topper);
+// Using reduce()
+// let totalMarks = students.reduce((sum, student) => {
+//   return sum + student.marks;
+// }, 0);
+
+// console.log(totalMarks);
+
+// // Processing arrays of objects helps manage real-world data like students, products, or users. Methods such as map(), filter(), and reduce() are very useful for extracting, filtering, and calculating data efficiently.
+
+// 5. Error Handling
+// Error handling prevents the program from crashing.
+// try-catch
+// try {
+//   let result = 10 / 0;
+//   console.log(result);
+// } catch (error) {
+//   console.log("Error occurred");
+// }
+// Throwing Custom Error
+// let age = 15;
+
+// try {
+//   if (age < 18) {
+//     throw new Error("Not eligible");
+//   }
+
+//   console.log("Eligible");
+// } catch (error) {
+//   console.log(error.message);
+// }
+// finally Block
+// try {
+//   console.log("Try block");
+// } catch (error) {
+//   console.log(error);
+// } finally {
+//   console.log("Always executes");
+// }
+
+// // Error handling helps identify and manage runtime errors without stopping the program. Using try, catch, and finally improves application reliability and debugging.
+
+// 4. Modules
+
+// Modules help split code into separate reusable files.
+
+// math.js
+// export function add(a, b) {
+//   return a + b;
+// }
+// app.js
+// import { add } from "./math.js";
+
+// console.log(add(2, 3));
+
+// // Modules improve code organization by separating functionality into different files. This makes applications cleaner, reusable, and easier to maintain.
+
+// 5. Named Export and Importing Named Export
+// Exporting
+// // utils.js
+
+// export const name = "Rahul";
+
+// export function greet() {
+//   console.log("Hello");
+// }
+// Importing
+// // app.js
+
+// import { name, greet } from "./utils.js";
+
+// console.log(name);
+
+// greet();
+
+
+// // Named exports allow exporting multiple variables or functions from one file. While importing, the exact exported names must be used inside curly braces.
+
+// 6. Default Export and Importing Default Export
+// Exporting Default
+// // message.js
+
+// export default function message() {
+//   console.log("Welcome");
+// }
+// Importing Default
+// // app.js
+
+// import message from "./message.js";
+
+// message();
+// // A default export allows exporting only one main value from a file. During import, we can give any name to the imported function or variable without using curly braces.
