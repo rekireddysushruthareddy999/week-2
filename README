@@ -1,3 +1,66 @@
+# Week 2 JavaScript Assignments
+
+This repository contains a set of JavaScript practice assignments focused on arrays, objects, spread/rest operators, copying techniques, class usage, and basic asynchronous timing with `setTimeout` and Promises.
+
+## Files and Assignment Summary
+
+- `copy_extend_array.js`
+  - Demonstrates copying an array using the spread operator and extending it with a new value.
+
+- `Update_user_object.js`
+  - Shows how to clone an object and add a new property without mutating the original object.
+
+- `Spread_operator.js`
+  - Uses the rest operator to accept any number of arguments and compute their sum.
+
+- `Shallow_copy.js`
+  - Builds a shallow copy of an object using spread syntax and highlights how nested data behaves.
+
+- `Deep_copy.js`
+  - Uses `structuredClone` to create a deep copy of a nested object and verifies that the original remains unchanged after modification.
+
+- `Daily_temperature_record.js`
+  - Processes an array of temperatures using `filter`, `map`, `reduce`, `find`, and `findIndex`.
+
+- `Shopping_cart.js`
+  - Implements multiple array helper methods for a shopping cart example, including inventory filtering, total price mapping, and grand total calculation.
+
+- `Student_performance_dashboard.js`
+  - Analyzes student marks with filtering, grading, averaging, and searching operations.
+
+- `Exam_portal.js`
+  - Simulates an exam submission flow with timed console messages using `setTimeout`.
+
+- `Countdown_simulator.js`
+  - Simulates a basic OTP countdown/promise flow and prints fulfillment or rejection results.
+
+- `Library_book_management_system.js`
+  - Defines a `Book` class and demonstrates managing a small book collection with borrowing and availability logic.
+
+## How to Run
+
+Make sure you have Node.js installed.
+
+From the project root (`c:\ATP\week-2`), run any script with:
+
+```bash
+node <script-name>.js
+```
+
+Example:
+
+```bash
+node copy_extend_array.js
+```
+
+## Notes
+
+- Most scripts are written for Node.js execution in a console environment.
+- `Deep_copy.js` uses `structuredClone`, which is available in modern Node versions.
+- The repository is a good practice set for JavaScript fundamentals, especially working with arrays, objects, and basic asynchronous behavior.
+
+
+
 // 1. Basic & Advanced Operations on Arrays & Objects
 // Arrays
 // An array stores multiple values in a single variable.
